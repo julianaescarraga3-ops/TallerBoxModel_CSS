@@ -1,0 +1,385 @@
+/* ========================================
+   CONFIGURACIÓN GENERAL
+======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #05060D,
+        #111638,
+        #321D68,
+        #60308A
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ========================================
+   CONTENEDOR
+======================================== */
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* ========================================
+   CREDENCIAL
+======================================== */
+
+.credencial {
+    width: 760px;
+    height: 430px;
+
+    background: linear-gradient(
+    135deg,
+    #ffffff,
+    #f4eff9
+);
+
+border: 2px solid #60308A;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    position: relative;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.20);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+.credencial:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ========================================
+   INSIGNIA
+======================================== */
+
+.insignia {
+    position: absolute;
+
+    top: 20px;
+    right: -35px;
+
+    width: 150px;
+
+    padding: 7px;
+
+    text-align: center;
+
+    background: linear-gradient(
+    90deg,
+    #60308A,
+    #B447E8
+);
+
+    color: white;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transform: rotate(35deg);
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========================================
+   ENCABEZADO
+======================================== */
+
+.encabezado {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.titulo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.titulo span {
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    color: #60308A;
+}
+
+.titulo h1 {
+    font-size: 24px;
+
+    font-weight: 400;
+
+    letter-spacing: 7px;
+
+    color: #60308A;
+}
+
+.linea {
+    width: 100%;
+    height: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #111638,
+        #321D68,
+        #60308A,
+        #B447E8
+    );
+
+    border-radius: 5px;
+}
+
+
+/* ========================================
+   CONTENIDO
+======================================== */
+
+.contenido {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+/* ========================================
+   FOTO
+======================================== */
+
+.foto-contenedor {
+    width: 190px;
+    height: 190px;
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+.avatar {
+    width: 190px;
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    border: 5px solid #B447E8;
+
+    box-shadow:
+        0 8px 20px rgba(204, 76, 183, 0.2);
+}
+
+
+/* ========================================
+   ONLINE
+======================================== */
+
+.online {
+    position: absolute;
+
+    bottom: 10px;
+    right: -12px;
+
+    background: linear-gradient(
+        90deg,
+        #60308A,
+        #B447E8
+    );
+
+    color: white;
+
+    padding: 5px 12px;
+
+    border-radius: 15px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    z-index: 2;
+
+    border: 2px solid white;
+
+    box-shadow:
+        0 3px 8px rgba(181, 51, 160, 0.2);
+}
+
+
+/* ========================================
+   DATOS
+======================================== */
+
+.datos {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.datos h2 {
+    font-size: 25px;
+
+    color: #785175;
+
+    letter-spacing: 1px;
+}
+
+.rol {
+    color: #785175;
+    
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* ========================================
+   INFORMACIÓN CON ICONOS
+======================================== */
+
+.dato {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #0d0f0f;
+
+    font-size: 13px;
+}
+
+.dato i {
+    width: 20px;
+
+    color: #60308A;
+
+    font-size: 16px;
+
+    transition: transform 0.3s ease,
+                color 0.3s ease;
+}
+
+
+/* ========================================
+   HOVER ICONOS
+======================================== */
+
+.dato:hover i {
+    transform: scale(1.25);
+    color: #B447E8;
+}
+
+
+/* ========================================
+   PIE
+======================================== */
+
+.pie {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-top: 1px solid #b8c7c4;
+
+    padding-top: 15px;
+
+    color: #0e1010;
+
+    font-size: 11px;
+}
+
+.pie a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #101413;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+.pie a:hover {
+    color: #0c0f0f;
+}
+
+.pie a i {
+    font-size: 20px;
+}
+
+.pie p {
+    max-width: 240px;
+
+    text-align: right;
+
+    font-style: italic;
+}
